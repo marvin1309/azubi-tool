@@ -7,7 +7,7 @@ import com.theokanning.openai.service.OpenAiService;
 import java.time.Duration;
 
 public class SendPrompt {
-    private static final String API_KEY = "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";
+    private static final String API_KEY = "<you-API-key>";
 
     public static String send(String prompt){
 
