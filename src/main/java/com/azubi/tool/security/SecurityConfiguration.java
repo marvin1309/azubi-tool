@@ -1,6 +1,5 @@
 package com.azubi.tool.security;
 
-import com.azubi.tool.views.login.LoginView;
 import com.vaadin.flow.spring.security.VaadinWebSecurity;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -25,9 +24,7 @@ public class SecurityConfiguration extends VaadinWebSecurity {
         http.authorizeHttpRequests().requestMatchers(new AntPathRequestMatcher("/images/*.png")).permitAll();
 
         // Icons from the line-awesome addon
-        http.authorizeHttpRequests().requestMatchers(new AntPathRequestMatcher("/line-awesome/**/*.svg")).permitAll();
-        super.configure(http);
-        setLoginView(http, LoginView.class);
+
     }
 
 }
